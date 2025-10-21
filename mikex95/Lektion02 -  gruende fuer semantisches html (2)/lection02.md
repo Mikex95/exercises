@@ -23,6 +23,6 @@ Unsere Vergleiche - h2
 Depot-Vergleich - h3
 ETF-Vergleich - h3
 Robo-Advisor-Vergleich - h3
-.....
+......
 
 Meine Einschätzung ist besser, da meist die titles mit divs kreiert wurden und somit die Semantik fehlt.
