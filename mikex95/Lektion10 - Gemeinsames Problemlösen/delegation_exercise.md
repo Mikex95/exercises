@@ -76,7 +76,7 @@ Ich würde GitHub Issues für Tasks und PRs für Code‑Reviews nutzen. Für sch
 
 Rhythmus: kurzes tägliches Standup (10 min), wöchentlicher Check, PR‑Reviews innerhalb von 48 Stunden.
 
-## Warum so verteilt?
+### Warum so verteilt?
 
 Ich habe die Aufgaben nach Stärken verteilt, damit jeder das macht, worin er gut ist. Gleichzeitig sind kleine Lernaufgaben drin, damit alle etwas von anderen lernen.
 
