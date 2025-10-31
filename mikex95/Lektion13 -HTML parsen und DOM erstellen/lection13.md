@@ -1,24 +1,19 @@
-# Aufgabe
+# Aufgabe:
 
-Reflektion:
-Schreibe in eigenen Worten auf, was du bei den verschiedenen Anfragen beobachtet hast.
+Gehe zu https://www.wikipedia.de/.
+Öffne die Dev-Tools und navigiere zum Network-Tab.
+Aktualisiere die Seite und beobachte, wie die Ressourcen geladen werden.
+Analysiere und beantworte folgende Fragen:
 
-Welche HTTP-Methode wäre in welchem Anwendungsfall sinnvoll?
+Welche Ressource wurde als Erstes geladen? Warum?
+In welcher Reihenfolge werden die verschiedenen Ressourcentypen (z.B. Dokument, Stylesheet, Skript, Bild) geladen?
+Wie beeinflusst die Position eines Elements im HTML die Ladereihenfolge?
 
 # Lösung
 
-Bei den verschiedenen Anfragen habe ich beobachtet, dass die HTTP-Methoden je nach Zweck der Anfrage variieren.
+1. Zuerst geladen wurde das HTML Dokument
+2. styles.css
+3. wikipedia logo
+4. Javascript files
 
-- **GET**: Diese Methode wird verwendet, um Daten von einem Server abzurufen. Sie ist sinnvoll für das Laden von Webseiten, Bildern oder anderen Ressourcen, bei denen keine Änderungen auf dem Server vorgenommen werden sollen. Zum Beispiel beim Aufrufen einer Nachrichtenseite oder eines Blogs. Das hat bei http-server auch einen response zurückgegeben.
-
-- **POST**: Mit POST werden Daten an den Server gesendet, um neue Ressourcen zu erstellen. Diese Methode ist sinnvoll für Formulare, z.B. beim Absenden eines Kontaktformulars, beim Erstellen eines neuen Benutzerkontos oder beim Hochladen von Dateien. Der Server verarbeitet die Daten und gibt eine Antwort zurück.
-
-- **PUT**: PUT wird verwendet, um eine bestehende Ressource auf dem Server zu aktualisieren oder komplett zu ersetzen. Das ist nützlich, wenn man z.B. ein Benutzerprofil aktualisieren oder eine Datei ersetzen möchte.
-
-- **DELETE**: Diese Methode löscht eine Ressource auf dem Server. Sie kommt zum Einsatz, wenn man z.B. einen Beitrag, ein Konto oder eine Datei entfernen möchte.
-
-- **PATCH**: Mit PATCH werden nur Teile einer Ressource aktualisiert, nicht die gesamte Ressource. Das ist effizienter als PUT, wenn man nur einzelne Felder ändern möchte, z.B. nur die E-Mail-Adresse eines Benutzers.
-
-- **OPTIONS**: Mit OPTIONS fragt man den Server, welche HTTP-Methoden für eine bestimmte Ressource erlaubt sind. Das ist nützlich für CORS (Cross-Origin Resource Sharing) oder um herauszufinden, welche Operationen auf einer API verfügbar sind.
-
-Zusammengefasst: GET zum Abrufen, POST zum Erstellen, PUT/PATCH zum Aktualisieren und DELETE zum Löschen von Ressourcen.
+Die Position hat großen Einfluss auf den Parser, besonders wenn CSS zu spät geladen wird, kann ein shifting entstehen oder wenn Javascript zu früh geladen wird, stopt der parser was nicht wirklich effizient wäre.
