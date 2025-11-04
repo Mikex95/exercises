@@ -1,6 +1,6 @@
 # Aufgabe
 
-Schau dir die Sammlung an und wähle ein Experiment aus, das dir am meisten gefällt.
+Schau dir die Sammlung an und wähle Experimente aus, das dir am meisten gefällt.
 Gehe zum GitHub-Repository deiner drei ausgewählten Experimente und schau dir den Code an, um besser zu verstehen, wie sie erstellt wurden. Stell dir diese Fragen:
 Warum gefällt dir dieses Experiment?
 Welche Browser-APIs wurden, falls vorhanden, verwendet?
